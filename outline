@@ -58,3 +58,47 @@ Starts in 5 hours.
 1 - back to today’s games |	 2 - exit
 
 _____________________________
+
+class outlines
+
+scraper.rb
+  #get_page
+    gets ESPN MLB homepage
+  #scrape_games
+    takes get_page and returns each game
+  #makes_game
+    takes each game and creates a new game
+
+game.rb
+  #self.new_from_game
+    is used by makes_game to create a new game
+  #initialize
+    initializes the following:
+      home_team
+      away_team
+      date
+  ## info needed ##
+    home_team
+    home_team_record
+    away_team
+    away_team_record
+    date
+    time
+    -if game hasn't started-
+      current time
+    -if game is in progress or over-
+      inning
+      score
+
+cli.rb
+  #welcome
+    welcomes the user and starts #run
+  #print_todays_games
+    shows all games today
+  #print_game
+    shows game and score
+  #run
+    shows today games
+    asks for input
+    shows game
+    etc
